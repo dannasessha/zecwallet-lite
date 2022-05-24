@@ -93,10 +93,7 @@ describe("exercise parseZcashURI", () => {
 
   test("queryargs must be unique", () => {
     // duplicate param
-    const single = parseZcashURI("zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=3");
-    console.debug(single);
     const error = parseZcashURI("zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=3&amount=3");
-    console.debug(error);
     expect(typeof error).toBe("string");
 
   });
