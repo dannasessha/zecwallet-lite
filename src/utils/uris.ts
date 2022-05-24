@@ -38,7 +38,7 @@ export const parseZcashURI = (uri: string): ZcashURITarget[] | string => {
 
   for (const key of parsedUri.searchParams.keys()) {
     if (parsedUri.searchParams.getAll(key).length >1 ) {
-      return `repeated queryargs are not allowed "$key" appears more than once`;
+      return `repeated queryargs are not allowed "${key}" appears more than once`;
     }
   }
   if (!parsedUri || parsedUri.protocol !== "zcash:") {
