@@ -65,53 +65,61 @@ describe("exercise parseZcashURI", () => {
     // bad protocol
     const error = parseZcashURI("badprotocol:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=123.456");
     expect(typeof error).toBe("string");
+    expect(error).toBe("Invalid URI or protocol");
   });
 
   test("bad address", () => {
     // bad address
     const error = parseZcashURI("zcash:badaddress?amount=123.456");
     expect(typeof error).toBe("string");
+    expect(error).toBe("\"badaddress\" was not a valid zcash address");
   });
 
   test("no address", () => {
     // no address
     const error = parseZcashURI("zcash:?amount=123.456");
     expect(typeof error).toBe("string");
+    expect(error).toBe("URI 0 didn't have an address");
   });
 
   test("invalid parameter queryarg name", () => {
     // bad param name
     const error = parseZcashURI("zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?THISISNOTAVALIDQUERYARG=3");
     expect(typeof error).toBe("string");
+    expect(error).toBe("Unknown parameter THISISNOTAVALIDQUERYARG");
   });
 
   test("index=1 has no amount", () => {
     // index=1 doesn't have amount
     const error = parseZcashURI("zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=2&address.1=tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU");
     expect(typeof error).toBe("string");
+    expect(error).toBe("URI 1 didn't have an amount");
   });
 
   test("queryargs must be unique", () => {
     // duplicate param
     const error = parseZcashURI("zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=3&amount=3");
     expect(typeof error).toBe("string");
+    expect(error).toBe("repeated queryargs are not allowed \"amount\" appears more than once");
 
   });
 
-  test("invalid parameter queryarg name", () => {
+  test("invalid index", () => {
     // bad index
     const error = parseZcashURI(
       "zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=2&address.a=tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU&amount.a=3"
     );
     expect(typeof error).toBe("string");
+    expect(error).toBe("Duplicate param address");
   });
 
-  test("invalid parameter queryarg name", () => {
+  test("missing index=1", () => {
 
     // index=1 is missing
     const error = parseZcashURI(
       "zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=0.1&address.2=tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU&amount.2=2"
     );
     expect(typeof error).toBe("string");
+    expect(error).toBe("Some indexes were missing");
   });
 });
