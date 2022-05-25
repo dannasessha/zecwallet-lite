@@ -31,6 +31,7 @@ You need to have the following software installed before you can build Zecwallet
 * [Nodejs v12.16.1 or higher](https://nodejs.org)
 * [Yarn](https://yarnpkg.com)
 * [Rust v1.40+](https://www.rust-lang.org/tools/install)
+* [Electron] (https://www.electronjs.org/)
 
 ```
 git clone https://github.com/zingolabs/zecwallet-lite.git
@@ -40,13 +41,18 @@ yarn install
 yarn build
 ```
 
-To start in development mode, run
-```
-yarn dev
-```
+# The following instructions are tested on Arch Linux:
 To start in production mode, run
 ```
 yarn start
 ```
+You should see `Starting the development server...`
+and then `Compiled successfully!` printed out in this terminal.
+
+Then, in another terminal instance, run
+```
+electron .
+```
+Two windows should open, one for the app and one for debugging.
 
 _PS: Zecwallet-Lite is NOT an official wallet, and is not affiliated with the Electric Coin Company in any way._
