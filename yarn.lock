@@ -5079,15 +5079,15 @@ electron@^13.1.2:
     "@types/node" "^14.6.2"
     extract-zip "^1.0.3"
 
-electronmon@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/electronmon/-/electronmon-1.1.2.tgz#b64c6f20c0faeb07bec7554d1fee5c88914e7fcc"
-  integrity sha512-0VSG5sRxNLDmGYVq08BbTfXtZ7cJ6yNByuDTrHjY+S6Ms+LVGuUROtHOhm1mSFhm33es5MNwgHb9ik8M4gW4Iw==
+electronmon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/electronmon/-/electronmon-2.0.2.tgz#082cb4c7cd5eee0602308c3253b17ecbef77aea8"
+  integrity sha512-Yw1CXEp5HJT9P6Sns3UP3Krwm5eb2JKqTRAVczKdsUa+U/dMTgONwKIHkPbKSSmtyTV+5JwobxkhFPiRgegObA==
   dependencies:
     chalk "^3.0.0"
     import-from "^3.0.0"
-    runtime-required "^1.0.2"
-    watchboy "^0.4.2"
+    runtime-required "^1.1.0"
+    watchboy "^0.4.3"
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -11066,12 +11066,10 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-runtime-required@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/runtime-required/-/runtime-required-1.0.2.tgz#23de8382f33f8dff5486963891288d52ab74d28c"
-  integrity sha512-pYR+fg0jG2MYXjmY3JcVGSPI224O4b2O9StwRmY3VU9WnTSSXaSn/WiWD2wicYBo53rVjg2yRr2dr08aFtHSsQ==
-  dependencies:
-    resolve-from "^4.0.0"
+runtime-required@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/runtime-required/-/runtime-required-1.1.0.tgz#a000a50c2748dba123f4dac5105e66d4599519c4"
+  integrity sha512-yX97f5E0WfNpcQnfVjap6vzQcvErkYYCx6eTK4siqGEdC8lglwypUFgZVTX7ShvIlgfkC4XGFl9O1KTYcff0pw==
 
 rxjs@^6.5.2, rxjs@^6.6.0, rxjs@^6.6.3:
   version "6.6.7"
@@ -12819,7 +12817,7 @@ warning@^4.0.3:
   dependencies:
     loose-envify "^1.0.0"
 
-watchboy@^0.4.2:
+watchboy@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/watchboy/-/watchboy-0.4.3.tgz#4b766e7923d8122e5811a6b9736a8e3e5943838c"
   integrity sha512-GHs1HxwvxSMBsqd/WfTOZhj5gBdMqf5HQpfgtKxDfZRxrlYPDdVLRB61LCeRzJaWANmvSIMlfmRVDwVmJFgAKA==
