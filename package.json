@@ -34,7 +34,7 @@
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "cross-env": "^7.0.3",
     "css-loader": "4.3.0",
-    "dateformat": "^4.5.1",
+    "dateformat": "^5.0.3",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
     "electron-build-env": "^0.2.0",
@@ -129,7 +129,7 @@
     ]
   },
   "devDependencies": {
-    "@types/dateformat": "^3.0.1",
+    "@types/dateformat": "^5.0.0",
     "@types/js-base64": "^3.3.1",
     "@types/progress-stream": "^2.0.1",
     "@types/qrcode.react": "^1.0.1",
