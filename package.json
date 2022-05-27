@@ -131,7 +131,7 @@
   "devDependencies": {
     "@types/dateformat": "^3.0.1",
     "@types/js-base64": "^3.3.1",
-    "@types/progress-stream": "^2.0.1",
+    "@types/progress-stream": "^2.0.2",
     "@types/qrcode.react": "^1.0.1",
     "@types/react-modal": "^3.12.0",
     "@types/react-router": "^5.1.15",
