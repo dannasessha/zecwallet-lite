@@ -147,7 +147,7 @@
     "electron-devtools-installer": "^3.1.1",
     "electronmon": "^1.1.2",
     "husky": "^6.0.0",
-    "wait-on": "^5.2.1"
+    "wait-on": "^6.0.1"
   },
   "homepage": "./",
   "main": "./public/electron.js",
