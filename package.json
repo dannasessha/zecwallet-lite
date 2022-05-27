@@ -138,7 +138,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/react-tabs": "^2.3.2",
     "@types/react-textarea-autosize": "^4.3.5",
-    "@types/request": "^2.48.5",
+    "@types/request": "^2.48.8",
     "@types/url-parse": "^1.4.3",
     "cargo-cp-artifact": "^0.1",
     "concurrently": "^5.3.0",
