@@ -11,7 +11,7 @@
     "url": "https://github.com/zingolabs/zecwallet-lite"
   },
   "dependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.20.7",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
